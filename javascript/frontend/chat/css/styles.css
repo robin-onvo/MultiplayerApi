@@ -522,3 +522,23 @@ body {
     min-width: 220px;
   }
 }
+
+/* Scrollbar i vänstra panelen */
+.sidebar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 10px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.25); /* ljusgrå/lila ton */
+  border-radius: 10px;
+  border: 2px solid rgba(15, 23, 42, 0.85); /* "maskar in" scrollen */
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.45);
+}
